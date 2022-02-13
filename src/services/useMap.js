@@ -1,8 +1,20 @@
 import AOGeoJSON from "@/assets/geoJSON/ao.js";
 import { breakNumber } from "@/utils";
 import { generatePointsInPoly } from "@/api/worker-api";
-import L from "leaflet";
 import { computed, ref, toRaw, watch } from "vue";
+import L from "leaflet";
+delete L.Icon.Default.prototype._getIconUrl;
+
+import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
+import iconUrl from 'leaflet/dist/images/marker-icon.png';
+import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl,
+  iconUrl,
+  shadowUrl,
+});
+
 
 const setupMap = (mapContainer) => {
   const districtLayers = [];
