@@ -1,0 +1,30 @@
+{
+  "name": "moscow-points",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@turf/bbox": "6.5.0",
+    "@turf/points-within-polygon": "6.5.0",
+    "@turf/random": "6.5.0",
+    "chart.js": "3.7.0",
+    "comlink": "4.3.1",
+    "element-plus": "2.0.1",
+    "leaflet": "1.7.1",
+    "normalize.css": "8.0.1",
+    "pinia": "2.0.11",
+    "vue": "3.2.30"
+  },
+  "devDependencies": {
+    "@types/leaflet": "1.7.9",
+    "@vitejs/plugin-vue": "2.2.0",
+    "unplugin-auto-import": "0.5.11",
+    "unplugin-vue-components": "0.17.18",
+    "vite": "2.8.0"
+  }
+}
